@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <link rel="icon" href="/test_site/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn</title>
-    <script type="module" crossorigin src="/test_site/assets/index-BFzwHOPB.js"></script>
-    <link rel="stylesheet" crossorigin href="/test_site/assets/index-BuACmzSp.css">
-  </head>
-  <body>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <div id="app"></div>
-  </body>
+    <style>
+    </style>
+  <script type="module" crossorigin src="/test_site/assets/index-XsKyM15t.js"></script>
+  <link rel="stylesheet" crossorigin href="/test_site/assets/index-CLc0sg52.css">
+</head>
+<body>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<div class="loader-container">
+    <div class="loader"></div>
+</div>
+<div id="app"></div>
+
+<script>
+    window.addEventListener('load', () => {
+        const loader = document.querySelector('.loader-container');
+        if (loader) {
+            loader.style.display = 'none';
+        }
+        const app = document.getElementById('app');
+        if (app) {
+            app.style.display = 'block';
+        }
+    });
+</script>
+</body>
 </html>
